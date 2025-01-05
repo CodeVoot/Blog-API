@@ -11,6 +11,7 @@ const API_URL = "http://localhost:4000";
 
 // serving public folder as static file
 app.use(express.static("public"));
+app.set('view-engine','ejs');
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
